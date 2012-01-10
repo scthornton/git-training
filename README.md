@@ -4,6 +4,7 @@ Git Training
 Notes from my git training put on by Matthew McCullough of Ambient Ideas
 http://github.com/matthewmccullough
 http://github.com/matthewmccullough/git-workshop
+http://gist.github.com/1589518
 
 
 Hour 1
@@ -96,3 +97,6 @@ How to track in your history
     git log --stat -C       #Show copies/renames
     git log --stat -M90     #Set threshold of 90% on similarity index, for detecting moved/renamed files
     git log -2 --stat -C --find-copies-harder  #Looks through history looking for copies
+
+Discussion on similarity index
+   http://permalink.gmane.org/gmane.comp.version-control.git/217
