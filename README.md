@@ -57,6 +57,20 @@ Hour 3
     output/
     !special.log  #DO NOT ignore this file
 
+    git config --global core.excludefiles "~/.gitignore"   #Global excludes.  
+
+Be careful what you put in global excludes. It is not portable, does not propagate with your code. Things you should put in here are ide/os type crud files.
+
 **Empty Directories**
     mkdir emptydir              #Git won't track this
     touch emptydir/.gitignore   #Now it will
+
+**Preconfigured .gitignore**
+
+>http://github.com/github/gitignore
+
+**Removing Files**
+
+    git rm FILENAME         #Directly remove and stage
+    rm FILENAME             #Deletes, but does not stage
+    git add -u .            #Picks up on deleted files,  -u == update
