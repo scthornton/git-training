@@ -115,11 +115,65 @@ Cloning repositories
 Branching
 
     git branch BRANCHNAME                           #Create BRANCHNAME
-    git checkout BRANCHNAME                         #Switch to BRANCHNAME
+    git checkout REMOTE/BRANCHNAME                         #Switch to BRANCHNAME
 
     **Make your changes**
 
     git push -u origin BRANCHNAME:BRANCHANME        #Push BRANCHNAME to BRANCHNAME at remote repsitory, -u means track
 
 
+Hour 5
+------
+
+Downloading objects from upstream (freshens your cache)
+
+    git fetch             
+
+Sharing your code
+
+    git commit
+    git push <remote>     #Send code to an upstream server
+    git pull <remote>     #Combination command, fetches and merges to a local branch.  
+
+
+    git branch -a         #List all branches, local and remote
+    git merge BRANCHNAME  #Merges with the currently checked out branch
+    git push              #Send your changes upstream
+
+Remotes
+
+> Vocabulary: (Ghetto simple)
+>    Local: Your copy of the repository. Exists on your machine
+>    Remote: Cached copy of upstream repository. Exists on your machine
+>    Upstream: Repository from external source. Could exist on your machine, if you cloned using file://,  but probably exists on a server somewhere
+
+> Default name is **origin**
+> Remote branches are locally **immutable** (conceptually)
+> Remotes can be thought of as bookmarks
+>   Use as public/private repositories
+>   Same repo/different protocol
+
+    git remote -v                             #Shows all inbound/outboud address for each repository
+    git remote add REMOTENAME GITREMOTEURL    #Add an alias for GITREMOTEURL called REMOTENAME
+
+    git checkout BRANCHAME                    #Make a **local** branch of remote branch
+                                              #If a branch exists in more than one remote, or is otherwise ambiguous, it will fail. 
+                                              #You *must* be explicit in this case
+    git checkout -b BRANCHNAME --track REMOTE/BRANCHNAME    #This will check out the branch you want
+
+Purge 'remote' branches that have been removed from an 'upstream' repository
+
+    git prune
+
+Reversing your commits
     
+> If you haven't pushed upstream
+
+    git reset --soft HEAD~1                   #Rewind the history 1 step. --soft preserves changes to files and keeps them staged
+    git reset --hard HEAD~1                   #Rewind the history 1 step. --hard DISCARDS changes
+
+> If you have pushed upstream
+> >   You can do the same,  but the graph of the commits as your other commiters know it has changed. 
+> >   *What if*  you destroyed a commit they were basing changes on?    
+    
+    git revert COMMITNUMBER                   #Make a commit that negates a previous commit
