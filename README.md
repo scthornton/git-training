@@ -1,7 +1,10 @@
 Git Training
 ============
 
-Notes from my git training
+Notes from my git training put on by Matthew McCullough of Ambient Ideas
+http://github.com/matthewmccullough
+http://github.com/matthewmccullough/git-workshop
+
 
 Hour 1
 ------
