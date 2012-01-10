@@ -2,9 +2,10 @@ Git Training
 ============
 
 Notes from my git training put on by Matthew McCullough of Ambient Ideas
-http://github.com/matthewmccullough
-http://github.com/matthewmccullough/git-workshop
-http://gist.github.com/1589518
+
+    http://github.com/matthewmccullough
+    http://github.com/matthewmccullough/git-workshop
+    http://gist.github.com/1589518
 
 
 Hour 1
@@ -80,6 +81,7 @@ Be careful what you put in global excludes. It is not portable, does not propaga
     rm FILENAME             #Deletes, but does not stage
     git add -u .            #Picks up on deleted files,  -u == update
     git reset --hard        #Restores *tracked* files to their last commited state, cleans the staging area
+    git checkout HEAD -- FILENAME  #Restores FILENAME to last commited state
 
 **Moving/Renaming Files**
 
@@ -90,7 +92,7 @@ Equivalent command:
     mv OLD NEW
     git add -A .            #All,  added/removed/modified
 
-How to track in your history
+How to track moves/renames in your history
 
     git log --stat          #This will show files added/deleted.  Not renamed/moved
     git log --stat -M       #Show renames
