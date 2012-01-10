@@ -143,9 +143,9 @@ Sharing your code
 Remotes
 
 > Vocabulary: (Ghetto simple)
->    Local: Your copy of the repository. Exists on your machine
->    Remote: Cached copy of upstream repository. Exists on your machine
->    Upstream: Repository from external source. Could exist on your machine, if you cloned using file://,  but probably exists on a server somewhere
+> > Local: Your copy of the repository. Exists on your machine
+> > Remote: Cached copy of upstream repository. Exists on your machine
+> > Upstream: Repository from external source. Could exist on your machine, if you cloned using file://,  but probably exists on a server somewhere
 
 > Default name is **origin**
 > Remote branches are locally **immutable** (conceptually)
