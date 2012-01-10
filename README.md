@@ -6,6 +6,7 @@ Notes from my git training put on by Matthew McCullough of Ambient Ideas
 * http://github.com/matthewmccullough
 * http://github.com/matthewmccullough/git-workshop
 * http://gist.github.com/1589518
+* https://bitly.com/bundles/matthewmccullough/1
 
 Hour 1
 ------
