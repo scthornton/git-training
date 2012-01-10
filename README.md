@@ -39,6 +39,20 @@ Hour 3
 
 **History**
 
-    git log         #Lists commits in reverse chronological order
-    git log --stat  #Log with diffstat
-    git log -p      #Generate patch
+    git log                   #Lists commits in reverse chronological order
+    git log --stat            #Log with diffstat
+    git log -p                #Generate patch
+    git log --diff-filter=A   #Select only files that were added.  Could also be M,C,....
+    git log --pretty=raw      #
+    git log -3                #Show last 3 commit
+    git log --author=User     #Show commits by User
+
+**Ignoring Files**
+
+    >vim .gitignore
+    #Glob patterns,  one per line
+    *.log   #Wildcard matching
+    *.tmp   #Wildcard matching
+    target  
+    output/
+    !special.log  #DO NOT ignore this file
