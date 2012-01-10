@@ -62,6 +62,7 @@ Hour 3
 Be careful what you put in global excludes. It is not portable, does not propagate with your code. Things you should put in here are ide/os type crud files.
 
 **Empty Directories**
+
     mkdir emptydir              #Git won't track this
     touch emptydir/.gitignore   #Now it will
 
@@ -74,3 +75,21 @@ Be careful what you put in global excludes. It is not portable, does not propaga
     git rm FILENAME         #Directly remove and stage
     rm FILENAME             #Deletes, but does not stage
     git add -u .            #Picks up on deleted files,  -u == update
+    git reset --hard        #Restores *tracked* files to their last commited state, cleans the staging area
+
+**Moving/Renaming Files**
+
+    git mv OLD NEW          #Composite command
+    
+Equivalent command:
+ 
+    mv OLD NEW
+    git add -A .            #All,  added/removed/modified
+
+How to track in your history
+
+    git log --stat          #This will show files added/deleted.  Not renamed/moved
+    git log --stat -M       #Show renames
+    git log --stat -C       #Show copies/renames
+    git log --stat -M90     #Set threshold of 90% on similarity index, for detecting moved/renamed files
+    git log -2 --stat -C --find-copies-harder  #Looks through history looking for copies
