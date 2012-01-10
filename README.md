@@ -10,8 +10,8 @@ Hour 1
 
     git config --global user.name "Your Name"
     git config --global user.email your@email
-    git config --global color.ui auto  #Syntax Highlighting
-    git config --global autocrlf input  #Default linefeed settings
+    git config --global color.ui auto           #Syntax Highlighting
+    git config --global autocrlf input          #Default linefeed settings
 
 Hour 2
 ------
@@ -26,10 +26,19 @@ Hour 2
     git diff --staged
     git diff HEAD
   
-    git add -p  .  #Walk through diff and selectivly add changes
+    git add -p  .           #Walk through diff and selectivly add changes
 
-    git status -s -u  #Short output, show untracked files
+    git status -s -u        #Short output, show untracked files
  
-    git diff -w  #Suppress the display of whitespace only changes
+    git diff -w             #Suppress the display of whitespace only changes
 
-    git diff --color-words #Highlight changed words using only colors
+    git diff --color-words  #Highlight changed words using only colors
+
+Hour 3
+------
+
+**History**
+
+    git log         #Lists commits in reverse chronological order
+    git log --stat  #Log with diffstat
+    git log -p      #Generate patch
