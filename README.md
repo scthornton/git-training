@@ -3,11 +3,11 @@ Git Training
 
 Notes from my git training put on by Matthew McCullough of Ambient Ideas
 
-(http://github.com/matthewmccullough)
+http://github.com/matthewmccullough
 
-(http://github.com/matthewmccullough/git-workshop)
+http://github.com/matthewmccullough/git-workshop
 
-(http://gist.github.com/1589518)
+http://gist.github.com/1589518
 
 Hour 1
 ------
@@ -103,3 +103,25 @@ How to track moves/renames in your history
 
 Discussion on similarity index
    http://permalink.gmane.org/gmane.comp.version-control.git/217
+
+Hour 4
+------
+
+Cloning repositories
+
+    git clone http://user@server/path/to.git
+    git clone git://server/path/to.git             #Typically read-only
+    git clone file://repository
+    git clone git@github.com/user/repository
+
+Branching
+
+    git branch BRANCHNAME                           #Create BRANCHNAME
+    git checkout BRANCHNAME                         #Switch to BRANCHNAME
+
+    **Make your changes**
+
+    git push -u origin BRANCHNAME:BRANCHANME        #Push BRANCHNAME to BRANCHNAME at remote repsitory, -u means track
+
+
+    
