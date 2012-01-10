@@ -3,9 +3,15 @@ Git Training
 
 Notes from my git training put on by Matthew McCullough of Ambient Ideas
 
+<<<<<<< HEAD
 (http://github.com/matthewmccullough)
 (http://github.com/matthewmccullough/git-workshop)
 (http://gist.github.com/1589518)
+=======
+    (http://github.com/matthewmccullough)
+    (http://github.com/matthewmccullough/git-workshop)
+    (http://gist.github.com/1589518)
+>>>>>>> b713954791536a2a0be5d29372259bee1874db39
 
 
 Hour 1
