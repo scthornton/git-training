@@ -51,8 +51,12 @@ Hour 3
 
     >vim .gitignore
     #Glob patterns,  one per line
-    *.log   #Wildcard matching
-    *.tmp   #Wildcard matching
+    *.log         #Wildcard matching
+    *.tmp         #Wildcard matching
     target  
     output/
     !special.log  #DO NOT ignore this file
+
+**Empty Directories**
+    mkdir emptydir              #Git won't track this
+    touch emptydir/.gitignore   #Now it will
