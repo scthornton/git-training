@@ -177,3 +177,45 @@ Reversing your commits
 > >   *What if*  you destroyed a commit they were basing changes on?    
     
     git revert COMMITNUMBER                   #Make a commit that negates a previous commit
+
+Hour 6
+------
+
+Merge conflicts
+
+    git merge BRANCHNAME              #Merge BRANCHNAME with currently checked out branch
+    CONFLICT (content): Merge conflict in FILENAME
+    Automatic merge failed; fix conflicts and then commit the result.
+    git status                        #Will show you what the problems are
+
+> To fix,  edit the file and make it look as you want it to appear. OR there are a number of tools to fix it.
+    
+    git mergetool -t opendiff
+    meld
+    
+
+NVIE Git workflow
+    
+    http://nvie.com/posts/a-successful-git-branching-model/
+
+Rebase
+
+    git checkout BRANCHNAME
+    git rebase master
+    git rebase --continue       #If there are merge conflicts,  fix them then run this
+  
+     ** Make your changes **
+
+    git checkout master
+    git merge BRANCHNAME        #Merge the branch back into the master
+
+> Another way to use it
+
+    git checkout BRANCHNAME
+    git rebase -i HEAD~5        #Interactive rebase of the last 5 commits to HEAD
+    git rebase -i COMMITID      #Interactive rebase starting with COMMITID -> HEAD
+
+> Inside the interactive rebase:
+       pick COMMITID            
+       squash COMMITID          
+       reword COMMITID
