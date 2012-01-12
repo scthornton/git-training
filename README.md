@@ -3,10 +3,24 @@ Git Training
 
 Notes from my git training put on by Matthew McCullough of Ambient Ideas
 
+Links:
 * http://github.com/matthewmccullough
 * http://github.com/matthewmccullough/git-workshop
 * http://gist.github.com/1589518
 * https://bitly.com/bundles/matthewmccullough/1
+
+Slides:
+* http://dl.dropbox.com/u/53401/github/github-git-training-slides.pdf
+
+Free Git Books:
+* http://progit.org/
+* http://dl.dropbox.com/u/53401/github/progit.epub
+* http://dl.dropbox.com/u/53401/github/progit.pdf
+
+Shell Enhancements:
+* http://ambientideas.com/blog/index.php/2010/08/git-bash-prompt/
+* http://ambientideas.com/blog/index.php/2010/11/zshell-prompt-for-git/
+* https://github.com/matthewmccullough/scripts
 
 Hour 1
 ------
